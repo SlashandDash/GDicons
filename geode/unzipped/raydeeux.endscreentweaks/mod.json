@@ -1,0 +1,150 @@
+{
+	"geode": "3.4.0",
+	"gd": {
+		"mac": "2.206",
+		"android": "2.206",
+		"win": "2.206"
+	},
+	"version": "v1.2.0",
+	"id": "raydeeux.endscreentweaks",
+	"name": "EndscreenTweaks",
+	"developers": ["RayDeeUx", "sofabeddd", "Relative"],
+	"description": "Various tweaks to the endscreen. (Formerly WholesomeEndTexts.)",
+	"repository": "https://github.com/RayDeeUx/EndscreenTweaks",
+	"settings": {
+		"enabled": {
+			"name": "Enabled",
+			"description": "Toggles the mod.",
+			"type": "bool",
+			"default": true
+		},
+		"endTexts": {
+			"name": "Enable Endscreen Texts",
+			"description": "Toggles the main feature of the mod: changing the endscreen text!",
+			"type": "bool",
+			"default": true
+		},
+		"custom": {
+			"name": "Include Custom Messages",
+			"description": "<cp>[REQUIRES RESTART TO APPLY]</c>\n\nIncludes your own custom \"Level Complete\" text.\nPlease edit the \"custom.txt\" file by opening this mod's config directory (look for the golden pencil button at the bottom left of the mod's introductory screen).",
+			"type": "bool",
+			"default": false
+		},
+		"technoblade": {
+			"name": "Include Technoblade (o7)",
+			"description": "<cp>[REQUIRES RESTART TO APPLY]</c>\n\nIncludes quotes from Minecraft YouTuber Technoblade.",
+			"type": "bool",
+			"default": false
+		},
+		"maxScale": {
+			"name": "End Text Max Scale",
+			"description": "Sets the max scale of all end text messages.",
+			"type": "float",
+			"default": 0.5,
+			"min": 0.10,
+			"max": 1.00,
+			"control": {
+				"slider-step": 0.01
+			}
+		},
+		"customFont": {
+			"name": "Endtext Font #",
+			"description": "Sets the font of all end text messages. Default is 0 (falls back to <cl>bigFont</c>, as seen in vanilla Geometry Dash).\n\nNotes:\n- <cj>-1 for Golden Pusab, -2 for chatFont.</c>\n- <cy>To use font numbers greater than 0: refer to the level editor for the font each number corresponds to, subtract that number by 1, and then put it here.</c>",
+			"type": "int",
+			"default": 0,
+			"min": -2,
+			"max": 59,
+			"control": {
+				"input": true,
+				"slider": true,
+				"arrows": true,
+				"big-arrows": true,
+				"arrow-step": 1,
+				"big-arrow-step": 5,
+				"slider-step": 1
+			}
+		},
+		"platAttemptsAndJumps": {
+			"name": "Plat. Attempts + Jumps",
+			"description": "Shows your attempt and jump count on the Level Complete screen when completing Platformer levels.",
+			"type": "bool",
+			"default": false
+		},
+		"hideChains": {
+			"name": "Hide Chains",
+			"description": "Hides the chains from EndLevelLayer.",
+			"type": "bool",
+			"default": false
+		},
+		"hideBackground": {
+			"name": "Hide Background",
+			"description": "Hides the background from EndLevelLayer.",
+			"type": "bool",
+			"default": false
+		},
+		"hideHideEndscreen": {
+			"name": "Hide \"Hide Endscreen\" Button",
+			"description": "Hides the \"Hide Endscreen\" button from EndLevelLayer. (Still clickable, just invisible.)\n\n<cy>(Enabling this option will also hide the sprite of the extra button added from enabling the \"Hide EndLevelLayer\" option.)</c>",
+			"type": "bool",
+			"default": false
+		},
+		"hideEndLevelLayer": {
+			"name": "Auto Hide EndLevelLayer",
+			"description": "Hides the EndLevelLayer on level completion. Adds an extra button to toggle the EndLevelLayer's visibility.\n\n<cy>This also hides the rewards animation on completing levels.</c>",
+			"type": "bool",
+			"default": false
+		},
+		"noTransition": {
+			"name": "No Bouncing Transition",
+			"description": "Disables the bouncing transition when showing EndLevelLayer.",
+			"type": "bool",
+			"default": false
+		},
+		"spaceUK": {
+			"name": "SpaceUK",
+			"description": "940px. Any questions?",
+			"type": "bool",
+			"default": false
+		}
+	},
+	"resources": {
+		"files": [
+			"resources/*.txt"
+		],
+		"sprites": [
+			"resources/btn.png"
+		]
+	},
+	"dependencies": [
+		{
+			"id": "geode.node-ids",
+			"version": ">=1.13.1",
+			"importance": "required"
+		}
+	],
+	"incompatibilities": [
+		{
+			"id": "relative.custom_endscreen_text",
+			"version": "*",
+			"importance": "superseded"
+		},
+		{
+			"id": "raydeeux.wholesomeendtexts",
+			"version": "*",
+			"importance": "superseded"
+		},
+		{
+			"id": "1257plays.spaceuk_mode",
+			"version": "*",
+			"importance": "superseded"
+		}
+	],
+	"issues": {
+		"url": "https://discord.com/channels/911701438269386882/1205523212444639292",
+		"info": "To disable hyphen prefixes and suffixes in custom messages, edit saved.json. For other issues, ping me <cl>(@erymanthus)</c> in the Geode SDK Discord server's <cl>#help</c> channel if you need help. <cr>DMs are NOT accepted.</c>"
+	},
+	"links": {
+		"community": "https://discord.gg/WqZBYdBWZW",
+		"homepage": "https://discord.com/channels/822510988409831486/1206371881222144020"
+	}
+}

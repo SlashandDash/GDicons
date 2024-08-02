@@ -1,0 +1,29 @@
+{
+	"geode": "3.3.0",
+	"gd": {
+		"win": "2.206",
+		"mac": "2.206"
+	},
+	"id": "midair.fullscreen_keybind",
+	"name": "Fullscreen Keybind",
+	"version": "v1.1.0",
+	"developer": "Midair",
+	"description": "Allows you to quickly toggle fullscreen with F11!",
+	"tags": [
+		"enhancement",
+		"utility",
+		"universal",
+		"offline"
+	],
+	"links": {
+		"source": "https://github.com/zMidair/Fullscreen-Keybind"
+	},
+	"repository": "https://github.com/zMidair/Fullscreen-Keybind",
+	"dependencies": [
+        {
+            "id": "geode.custom-keybinds",
+            "version": ">=1.7.1",
+			"importance": "required"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+	"geode": "3.3.0",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206"
+	},
+	"version": "1.2.1",
+	"id": "mat.run-info",
+	"name": "Run Info",
+	"developer": "mat",
+	"description": "Shows info about current run",
+	"settings": {
+		"position": {
+			"name": "Position",
+			"type": "string",
+			"default": "Top Left",
+			"description": "Where to place the run info widget on the screen",
+			"one-of": [
+				"Top Left",
+				"Top Right",
+				"Bottom Left",
+				"Bottom Right"
+			]
+		},
+		"show-icon": {
+			"name": "Show icon",
+			"type": "bool",
+			"default": true,
+			"description": "Shows the icon for the current mode"
+		},
+		"show-mode": {
+			"name": "Show mode",
+			"type": "bool",
+			"default": true,
+			"description": "Shows the text for the current mode"
+		},
+		"show-from": {
+			"name": "Show from",
+			"type": "bool",
+			"default": true,
+			"description": "Shows from which % the current run is from"
+		},
+		"use-start-pos": {
+			"name": "Use startpos icon",
+			"type": "bool",
+			"default": false,
+			"description": "Whether to use the startpos icon for testmode"
+		}
+	},
+	"repository": "https://github.com/matcool/geode-mods",
+	"tags": [
+		"gameplay",
+		"offline",
+		"utility"
+	]
+}

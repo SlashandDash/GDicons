@@ -1,0 +1,58 @@
+{
+	"geode": "3.1.1",
+	"version": "v1.1.10",
+	"gd": {
+		"android": "2.206",
+		"win": "2.206"
+	},
+	"id": "b1rtek.gddlintegration",
+	"name": "GDDL Integration",
+	"developers": ["B1rtek", "Diversion"],
+	"description": "Integration with Geometry Dash Demon Ladder - level tiers, search and more",
+	"links": {
+		"source": "https://github.com/B1rtek/Geode-GDDLIntegration",
+		"community": "https://discord.gg/gddl"
+	},
+	"dependencies": [
+		{
+			"id": "geode.node-ids",
+			"version": ">=1.12.0",
+			"importance": "required"
+		}
+	],
+	"tags": [
+		"utility",
+		"interface",
+		"online"
+	],
+	"issues": {
+		"info": "You can submit an <cr>bug report</c>/<cj>feature request</c> directly to the mod's repo here",
+		"url": "https://github.com/B1rtek/Geode-GDDLIntegration/issues/new/choose"
+	},
+	"resources": {
+		"sprites": [
+			"resources/tier.png",
+			"resources/split.png",
+			"resources/search.png",
+			"resources/old_search.png",
+			"resources/tiers/*.png"
+		]
+	},
+	"settings": {
+		"button-position": {
+			"name": "Button position",
+			"description": "Sets the GDDL Button position on the level info page",
+			"type": "custom"
+		},
+		"use-old-tier-label" : {
+			"name": "Use old tier label",
+			"description": "Changes the tier button into a label, allows for shifting it up and down",
+			"type": "custom"
+		},
+		"exclude-range": {
+			"name": "Include/Exclude range",
+			"description": "The GDDL Button will be hidden/shown on the level pages within the exclusion/inclusion range",
+			"type": "custom"
+		}
+	}
+}

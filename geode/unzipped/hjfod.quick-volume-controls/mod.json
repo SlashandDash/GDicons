@@ -1,0 +1,21 @@
+{
+	"geode": "3.4.0",
+	"gd": {
+		"win": "2.206"
+	},
+	"version": "v1.1.1",
+	"id": "hjfod.quick-volume-controls",
+	"name": "Quick Volume Controls",
+	"developer": "HJfod",
+	"description": "Adjust volume via Alt + Scroll Wheel!",
+	"incompatibilities": [
+		{
+			"id": "tpdea.volume_scroll",
+			"importance": "conflicting",
+			"version": "v1.0.0"
+		}
+	],
+	"resources": {
+		"sprites": ["./screenshot.png"]
+	}
+}

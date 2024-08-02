@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>oatmealine.nlw_integration/NLW_button_white.png</key>
+		<dict>
+			<key>spriteOffset</key>
+			<string>{0,0}</string>
+			<key>spriteSize</key>
+			<string>{150,150}</string>
+			<key>spriteSourceSize</key>
+			<string>{160,160}</string>
+			<key>textureRect</key>
+			<string>{{0,0},{150,150}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>oatmealine.nlw_integration/NLW_logo.png</key>
+		<dict>
+			<key>spriteOffset</key>
+			<string>{0,0}</string>
+			<key>spriteSize</key>
+			<string>{256,256}</string>
+			<key>spriteSourceSize</key>
+			<string>{256,256}</string>
+			<key>textureRect</key>
+			<string>{{0,152},{256,256}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>3</integer>
+		<key>realTextureFileName</key>
+		<string>oatmealine.nlw_integration/NLW_icons-uhd.png</string>
+		<key>size</key>
+		<string>{256,408}</string>
+		<key>textureFileName</key>
+		<string>oatmealine.nlw_integration/NLW_icons-uhd.png</string>
+	</dict>
+</dict>
+</plist>

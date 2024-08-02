@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>player_03_001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteOffset</key>
+			<string>{0,0}</string>
+			<key>spriteSize</key>
+			<string>{122,120}</string>
+			<key>spriteSourceSize</key>
+			<string>{122,120}</string>
+			<key>textureRect</key>
+			<string>{{0,0},{122,120}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>player_03_2_001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteOffset</key>
+			<string>{1,-2	}</string>
+			<key>spriteSize</key>
+			<string>{115,106}</string>
+			<key>spriteSourceSize</key>
+			<string>{115,106}</string>
+			<key>textureRect</key>
+			<string>{{123,0},{115,106}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>player_03_glow_001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteOffset</key>
+			<string>{0,0}</string>
+			<key>spriteSize</key>
+			<string>{130,128}</string>
+			<key>spriteSourceSize</key>
+			<string>{130,128}</string>
+			<key>textureRect</key>
+			<string>{{239,0},{130,128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>3</integer>
+		<key>pixelFormat</key>
+		<string>RGBA4444</string>
+		<key>premultiplyAlpha</key>
+		<false/>
+		<key>realTextureFileName</key>
+		<string>icons/player_03-uhd.png</string>
+		<key>size</key>
+		<string>{370,128}</string>
+		<key>smartupdate</key>
+		<string></string>
+		<key>textureFileName</key>
+		<string>icons/player_03-uhd.png</string>
+	</dict>
+</dict>
+</plist>

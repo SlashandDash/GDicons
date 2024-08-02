@@ -1,0 +1,35 @@
+{
+	"geode": "3.1.1",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206",
+		"ios": "2.206"
+	},
+	"id": "cvolton.level-id-api",
+	"name": "Editor Level ID API",
+	"version": "v1.0.0",
+	"developer": "Cvolton",
+	"description": "Assigns Level IDs to Editor levels that other mods can use to refer to them",
+	"early-load": true,
+    "repository": "https://github.com/Cvolton/level-id-api-geode",
+	"api": {
+		"include": [
+			"include/*.hpp"
+		]
+	},
+	"settings": {
+        "show-ids": {
+            "name": "Show IDs in search",
+            "description": "Whether the assigned IDs should be shown in the list cells for My Levels and My Lists",
+            "type": "bool",
+            "default": false
+        },
+        "debug-print": {
+            "name": "Print debug messages in Geode Console",
+            "description": "Whether debug messages should be printed in the Geode Console for further debugging assistance",
+            "type": "bool",
+            "default": false
+        }
+	}
+}

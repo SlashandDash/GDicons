@@ -1,0 +1,28 @@
+{
+	"geode": "3.0.0-beta.3",
+	"gd": {
+		"win": "2.206",
+		"mac": "2.206",
+		"android": "2.206"
+	},
+	"version": "v1.4.0-beta.2",
+	"id": "oatmealine.ids_integration",
+	"name": "IDS Integration",
+	"dependencies": [
+		{
+			"id": "geode.node-ids",
+			"version": ">=v1.12.0",
+			"importance": "required"
+		}
+	],
+	"developer": "oatmealine",
+	"description": "Integrates the Insane Demon Spreadsheet into level pages",
+	"repository": "https://github.com/oatmealine/nlw-integration/tree/ids-integration",
+	"resources": {
+		"spritesheets": {
+			"NLW_icons": [
+				"resources/*.png"
+			]
+		}
+	}
+}

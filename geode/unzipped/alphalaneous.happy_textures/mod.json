@@ -1,0 +1,69 @@
+{
+	"geode": "3.4.0",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206"
+	},
+	"version": "v1.3.23",
+	"id": "alphalaneous.happy_textures",
+	"name": "Happy Textures :3",
+	"developer": "Alphalaneous",
+	"description": "Fixes texture pack annoyances",
+	"early-load": true,
+	"dependencies": [
+        {
+            "id": "geode.node-ids",
+            "version": ">=v1.12.0-beta.1",
+            "importance": "required"
+        }
+    ],
+	"resources": {
+        "files": [
+			"resources/*"
+        ],
+		"sprites": [
+			"sprites/*"
+		]
+    },
+	"links": {
+        "homepage": "https://twitter.com/alphalaneous",
+        "source": "https://github.com/Alphalaneous/HappyTextures",
+        "community": "https://discord.gg/Txn2CA5dHF"
+    },
+	"tags": ["universal", "interface", "enhancement", "bugfix", "offline", "utility", "customization"],
+	"settings": {
+		"ccscale9sprite-fix": {
+            "name": "CCScale9Sprite Fix",
+			"description": "Fix sprite overlapping when you have transparent CCScale9Sprites (Such as on the level search page).",
+            "type": "bool",
+            "default": true,
+			"platforms": ["win", "android"]
+        },
+		"pusab-fix": {
+            "name": "Pusab Fix",
+			"description": "Makes changing pusab in texture packs not affect the font within levels.",
+            "type": "bool",
+            "default": true,
+			"platforms": ["win", "android"]
+        },
+		"comment-border-fix": {
+            "name": "Comment Border Fix",
+			"description": "Makes comment borders look cleaner, especially with texture packs.",
+            "type": "bool",
+            "default": true
+        },
+		"ui-modifications": {
+            "name": "Allow UI Modifications",
+			"description": "Allow Tetxure Packs to edit the game's interface.",
+            "type": "bool",
+            "default": true
+        },
+		"hot-reload": {
+            "name": "Hot Reload",
+			"description": "Allow hot reloading of UI elements, use if you are a texture pack creator.",
+            "type": "bool",
+            "default": false
+        }
+	}
+}

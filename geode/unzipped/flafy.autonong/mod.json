@@ -1,0 +1,79 @@
+{
+  "geode": "3.1.1",
+  "gd": {
+    "win": "2.206",
+    "android": "2.206"
+  },
+  "version": "0.3.0",
+  "id": "flafy.autonong",
+  "name": "Auto Nong",
+  "developer": "Flafy",
+  "description": "Automatically download NONG songs for levels",
+  "links": {
+    "community": "https://discord.gg/twuZ3X35yM",
+    "source": "https://github.com/flafydev/auto-nong"
+  },
+  "repository": "https://github.com/flafydev/auto-nong",
+  "tags": [
+    "music",
+    "online",
+    "utility",
+    "interface"
+  ],
+  "dependencies": [
+    {
+      "id": "fleym.nongd",
+      "version": ">=2.11.0",
+      "importance": "required"
+    }
+  ],
+  "resources": {
+    "sprites": [
+      "resources/addIcon.png",
+      "resources/mod_btn.png",
+      "resources/logo_regular.png",
+      "resources/logo_grayscaled.png"
+    ]
+  },
+  "settings": {
+    "use-cobalt": {
+      "name": "Use Cobalt Tools",
+      "type": "bool",
+      "default": true
+    },
+    "use-yt-dlp": {
+      "name": "Use yt dlp",
+      "type": "bool",
+      "default": false
+    },
+    "yt-dlp-path": {
+      "name": "yt dlp path",
+      "type": "file",
+      "default": "yt-dlp.exe"
+    },
+    "indexes": {
+      "name": "Indexes",
+      "description": "Auto Nong indexes.\nFrom indexes the mod knows where to fetch the songs from.",
+      "type": "custom",
+      "default": [
+        "https://cdn.jsdelivr.net/gh/FlafyDev/auto-nong-indexes@dist/official.json.gz",
+        "https://cdn.jsdelivr.net/gh/FlafyDev/auto-nong-indexes@dist/sfh-rooot.json.gz"
+      ]
+    },
+    "show-level-popup": {
+      "name": "Show popup",
+      "description": "Shows a popup when a level has a NONG song. Only once per level.",
+      "type": "bool",
+      "default": true
+    },
+    "always-show-auto-nong-btn": {
+      "name": "Always show\nAuto Nong button",
+      "description": "\nAlways show the Auto Nong button when entering a level. Even when there are no NONG songs to replace.\nThis is for adding NONG songs to levels that don't have any.",
+      "type": "bool",
+      "default": false
+    },
+    "_blacklistPPClear": {
+      "type": "custom"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+	"geode": "3.4.0",
+	"gd": {
+		"win": "2.206"
+	},
+	"version": "v1.1.21",
+	"id": "syzzi.click_between_frames",
+	"name": "Click Between Frames",
+	"developer": "syzzi",
+	"description": "Allows inputs to register between frames. Like TPS Bypass or Draw Divide, but with less lag and fewer physics bugs.",
+	"dependencies": [
+		{
+			"id": "geode.custom-keybinds",
+			"version": ">=v1.6.0",
+			"importance": "required"
+		}
+	],
+	"incompatibilities": [
+		{
+			"id": "nytelyte.wave_trail_drag_fix",
+			"importance": "conflicting",
+			"version": "<=v1.1.6"
+		}
+	],
+	"tags": [
+		"performance",
+		"gameplay",
+		"enhancement"
+	],
+	"settings": {
+		"soft-toggle": {
+			"name": "Disable CBF",
+			"description": "Disable CBF without needing to restart GD. This option does not disable physics bypass if you have it enabled!",
+			"type": "bool",
+			"default": false
+		},
+		"right-click": {
+			"name": "Right Click P2",
+			"description": "Use right click for player 2 jump.",
+			"type": "bool",
+			"default": false
+		},
+		"late-cutoff": {
+			"name": "Late Input Cutoff",
+			"description": "Check for inputs near the end of the frame instead of the start. \n\nSlightly reduces input lag, but also slightly reduces precision. May help if you are experiencing dropped or delayed inputs.",
+			"type": "bool",
+			"default": false
+		},
+		"actual-delta": {
+			"name": "Physics Bypass",
+			"description": "Reduces stuttering on some FPS values. Active even if \"Disable CBF\" is checked. \n\nTHIS WILL ALTER PHYSICS AND MAY BREAK SOME LEVELS! DON'T USE THIS IF YOUR LIST/LEADERBOARD BANS PHYSICS BYPASS!",
+			"type": "bool",
+			"default": false
+		},
+		"thread-priority": {
+			"name": "Thread Priority",
+			"description": "Whether to automatically set CBF's thread priority to the highest available. \n\nRequires game restart to apply.",
+			"type": "bool",
+			"default": true
+		}
+	},
+	"repository": "https://github.com/theyareonit/Click-Between-Frames"
+}

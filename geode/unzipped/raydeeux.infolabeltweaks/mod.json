@@ -1,0 +1,332 @@
+{
+	"geode": "3.4.0",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206"
+	},
+	"id": "raydeeux.infolabeltweaks",
+	"name": "InfoLabelTweaks",
+	"version": "v1.0.0",
+	"developer": "RayDeeUx",
+	"description": "Adds additional information to GD's Info Label. (Formerly part of ErysEdits.)",
+	"settings": {
+		"enabled": {
+			"name": "Enabled",
+			"description": "Toggles the mod.",
+			"type": "bool",
+			"default": true
+		},
+		"blendingDebugText": {
+			"name": "Readable Mode (Stronger Blending)",
+			"description": "Make the info label easier to read across a far larger variety of scenarios.\n\n<cy>(Make sure to check out the other options below this one!)</c>",
+			"type": "bool",
+			"default": true
+		},
+		"debugTextAlpha": {
+			"name": "Adjust Alpha/Opacity",
+			"description": "Sets the info label's opacity. Minimum is 150 (as seen in vanilla Geometry Dash).",
+			"type": "int",
+			"default": 150,
+			"min": 150,
+			"max": 255,
+			"control": {
+				"input": false,
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"arrow-step": 0,
+				"big-arrow-step": 0,
+				"slider-step": 1
+			}
+		},
+		"maxAlphaDebugText": {
+			"name": "Max Opacity",
+			"description": "Maxes the info label's opacity. This quick toggle is here in case you'd like to briefly see your info label at maximum opacity without having to remember what your preferred value for the \"Adjust Alpha/Opacity\" setting was.\n\n<cy>(If this is enabled, your setting for \"Adjust Alpha/Opacity\" will be ignored.)</c>",
+			"type": "bool",
+			"default": false
+		},
+		"chromaDebugText": {
+			"name": "Chroma Mode",
+			"description": "<cl>Original code by ItzKiba.</c>\n\nSets the color of the info label to cycle through the colors of a rainbow, as a last ditch effort to make the info label readable under every imaginable circumstance without flooding your Geode logs.",
+			"type": "bool",
+			"default": false
+		},
+		"chromaDebugTextSpeed": {
+			"name": "Chroma Speed",
+			"description": "Sets how quickly (lower value)/slowly (higher value) the info label changes color if \"Chroma Mode\" is enabled.",
+			"type": "float",
+			"default": 0.5,
+			"min": 0.1,
+			"max": 2.0,
+			"control": {
+				"input": false,
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"arrow-step": 0,
+				"big-arrow-step": 0,
+				"slider-step": 0.1
+			}
+		},
+		"customScale": {
+			"name": "Scale",
+			"description": "Sets the scale of the info label. Default is 0.5 (as seen in vanilla Geometry Dash).",
+			"type": "float",
+			"default": 0.5,
+			"min": 0.15,
+			"max": 1.00,
+			"control": {
+				"input": false,
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"arrow-step": 0,
+				"big-arrow-step": 0,
+				"slider-step": 0.01
+			}
+		},
+		"customFont": {
+			"name": "Font #",
+			"description": "Sets the font of the info label. Default is 0 (falls back to <cl>chatFont</c>, as seen in vanilla Geometry Dash).\n\nNotes:\n- <cj>-1 for Pusab, -2 for Golden Pusab.</c>\n- <cy>To use font numbers greater than 0: refer to the level editor for the font each number corresponds to, subtract that number by 1, and then put it here.</c>",
+			"type": "int",
+			"default": 0,
+			"min": -2,
+			"max": 59,
+			"control": {
+				"input": true,
+				"slider": true,
+				"arrows": true,
+				"big-arrows": true,
+				"arrow-step": 1,
+				"big-arrow-step": 5,
+				"slider-step": 1
+			}
+		},
+		"spaceUKScale": {
+			"name": "SpaceUK Scale",
+			"description": "Sets your debug scale to <cj>(0.5 * (940 / 1004))</c>. This toggle enables the default scale for the info label previously seen in in ErysEdits.\n\n<cy>(If this is enabled, your setting for \"Scale\" will be ignored.)</c>",
+			"type": "bool",
+			"default": false
+		},
+		"textAlignRight": {
+			"name": "Align Right (Text Content)",
+			"description": "Aligns the text contents of the info label to the right.",
+			"type": "bool",
+			"default": false
+		},
+		"positionAlignRight": {
+			"name": "Align Right (Position)",
+			"description": "Aligns the position of the info label towards the right side of the screen.",
+			"type": "bool",
+			"default": false
+		},
+		"positionAlignBottom": {
+			"name": "Align Bottom (Position)",
+			"description": "Aligns the position of the info label towards the bottom of the screen.",
+			"type": "bool",
+			"default": false
+		},
+		"tapsToClicks": {
+			"name": "\"Taps\" -> \"Clicks\"/\"Actions\"",
+			"description": "\"Taps\" becomes \"Clicks\" (\"Actions\" in platformer levels).",
+			"type": "bool",
+			"default": true
+		},
+		"pluralAttempts": {
+			"name": "Plural Attempts",
+			"description": "\"Attempt\" becomes \"Attempts\".",
+			"type": "bool",
+			"default": true
+		},
+		"fixLevelIDLabel": {
+			"name": "Fix \"LevelID:\" Label",
+			"description": "\"LevelID:\" becomes \"Level ID:\".",
+			"type": "bool",
+			"default": true
+		},
+		"hIDe": {
+			"name": "\"hIDe\"",
+			"description": "<cp>Inspired by</c> <cj>Alphalaneous</c>.\n\n<cp>Similar</c> <cj>to their hIDe mod</c>, this option \"hides\" the Level ID in the info label if you are playing a custom editor level. <cl>However, unlike Alphalaneous' \"hIDe\" mod, this will also hide level IDs on unlisted levels.</c>.\n\n<cy>This option does NOT require the hIDe mod to be installed, and pressing/holding the Shift key has no effect.</c>",
+			"type": "bool",
+			"default": true
+		},
+		"expandPerformance": {
+			"name": "Expand \"Perf\" Header",
+			"description": "\"-- Perf --\" becomes \"-- Performance --\".",
+			"type": "bool",
+			"default": true
+		},
+		"gameplayHeader": {
+			"name": "Add \"Gameplay\" Header",
+			"description": "Adds a \"-- Gameplay --\" header to the first section.",
+			"type": "bool",
+			"default": true
+		},
+		"currentChannel": {
+			"name": "Current Channel",
+			"description": "Shows the currently active channel.",
+			"type": "bool",
+			"default": true
+		},
+		"fps": {
+			"name": "FPS",
+			"description": "Includes your FPS count.",
+			"type": "bool",
+			"default": false
+		},
+		"lastKey": {
+			"name": "Last Key Pressed",
+			"description": "Shows the name of the last key you pressed, stylized like \"Last Key: [name]\".\n\n<cy>This will next to your FPS count if you have toggle on \"Compact Gameplay\".</c>",
+			"type": "bool",
+			"default": false,
+			"platforms": ["win", "mac"]
+		},
+		"jumps": {
+			"name": "Include Jumps",
+			"description": "Includes your current session's jump count (stylized like <cy>[this]</c>) next to your \"Taps\"/\"Clicks\"/\"Actions\" label.",
+			"type": "bool",
+			"default": false
+		},
+		"totalAttempts": {
+			"name": "Include Total Attempts",
+			"description": "Includes the total attempt count in a level (stylized like \"<cy> / this</c>\") next to your \"Attempt\"/\"Attempts\" label.",
+			"type": "bool",
+			"default": false
+		},
+		"totalTime": {
+			"name": "Include Total Time",
+			"description": "<cp>Platformer levels only.</c>\n\nIncludes the total time spent during your current session in a level (stylized like <cy>[this]</c>) next to your \"Time\" label (which shows the duration of your current attempt).",
+			"type": "bool",
+			"default": true
+		},
+		"affectedByForces": {
+			"name": "Affected by Forces",
+			"description": "Indicates when either Player 1 or Player 2 are affected by force objects <cy>[like this]</c> around the level's current gravity value.",
+			"type": "bool",
+			"default": false
+		},
+		"playerStatus": {
+			"name": "Player Status",
+			"description": "Includes info about the player's current status.\n\n<cp>Applies to both players in duals.</c>\n<cy>Does not include velocity and rotation information by default.</c>",
+			"type": "bool",
+			"default": false
+		},
+		"accuratePosition": {
+			"name": "Accurate Player Position",
+			"description": "Adds four decimal points to the player's X and Y positions in the first section.\n\n<cy>If you want accurate player positions while your player's X or Y position is in the negatives, consider buying MegaHack v8 instead; levels won't let you get there anyways without a start position.</c>",
+			"type": "bool",
+			"default": true
+		},
+		"velocityPlayer": {
+			"name": "Include Velocity",
+			"description": "Adds X/Y velocity information to player statuses. Defaults to one decimal point.",
+			"type": "bool",
+			"default": false
+		},
+		"rotationPlayer": {
+			"name": "Include Rotation",
+			"description": "Adds rotation and rotation speed to player statuses. Defaults to zero decimal points.",
+			"type": "bool",
+			"default": false
+		},
+		"accuratePlayer": {
+			"name": "Accurate Player Statuses",
+			"description": "Uses two decimal points for the player's velocity and rotation information.",
+			"type": "bool",
+			"default": true
+		},
+		"compactDirections": {
+			"name": "Player Direction as Emoticons",
+			"description": "Replaces word descriptions of the player's current direction with emoticon alternatives.\n\n<cy>Requires the previous setting (\"Add Player Info\") to be enabled; otherwise you won't see it.</c>",
+			"type": "bool",
+			"default": false
+		},
+		"levelTraits": {
+			"name": "Level Traits",
+			"description": "Includes info about the current level's traits.\n\n<cy>Note that all main levels are considered \"Tiny\". No, I will not be hardcoding the level's length.</c>",
+			"type": "bool",
+			"default": false
+		},
+		"lastPlayedAudio": {
+			"name": "Show Most Recent Song/Effect",
+			"description": "Includes the filename of the most recently loaded song in the Audio section.\n\n<cy>This setting is currently unavailable on macOS.</c>",
+			"type": "bool",
+			"default": true
+		},
+		"audioFromMods": {
+			"name": "Include Songs/Effects from Mods",
+			"description": "If \"Show Most Recent Song/Effect\" is enabled, songs and SFX file names from other Geode mods will appear in the Audio section. Disabling this will simply show \"[Geode mod]\" instead.\n\n<cy>This setting is currently unavailable on macOS.</c>",
+			"type": "bool",
+			"default": true
+		},
+		"cameraProperties": {
+			"name": "Camera Properties",
+			"description": "Adds an additional section of info related to the camera's state (named \"Camera\"), including zoom, rotation, position, shake factor, and offset.\n\n<cy>The shake factor will sometimes be equal to \"-0.01\" or something similar, thanks to a skill deficiency on RobTop's end. Don't you just love floating point values? :)</c>",
+			"type": "bool",
+			"default": false
+		},
+		"geodeInfo": {
+			"name": "Geode Mod Loader Info",
+			"description": "Adds an additional section of info related to your Geode setup named \"Geode\".",
+			"type": "bool",
+			"default": false
+		},
+		"compactAudio": {
+			"name": "Compact \"Audio\" Section",
+			"description": "Condenses Song and SFX counts from the \"Audio\" section into one line.",
+			"type": "bool",
+			"default": true
+		},
+		"compactGameplay": {
+			"name": "Compact \"Gameplay\" Section",
+			"description": "Condenses several pieces of information in the first section into one line, including:\n- Attempts and taps/clicks.\n- TimeWarp and Gravity.\n- X and Y position.\n- Gradients and Particles.",
+			"type": "bool",
+			"default": true
+		},
+		"compactCamera": {
+			"name": "Compact \"Camera\" Section",
+			"description": "<cp>Whenever possible</c>, this option condenses the camera's Zoom and Angle info (from the mod's custom \"Camera\" section) into one line.\n\n<cy>\"Camera Properties\" needs to be enabled first.</c>",
+			"type": "bool",
+			"default": false
+		},
+		"compactGeode": {
+			"name": "Compact \"Geode\" Section",
+			"description": "Condenses your mod counts (from the mod's custom \"Geode\" section) into one line.\n\n<cy>\"Geode Mod Loader Info\" needs to be enabled first.</c>",
+			"type": "bool",
+			"default": false
+		},
+		"conditionalValues": {
+			"name": "Conditional Labels",
+			"description": "Hides various values if unmodified. For reference:\n- TimeWarp if currently equal to 1.\n- Gravity if currently equal to 1.\n- Anything equal to either \"0\" or \"0 / 0\".\n\n<cy>This also applies to this mod's \"-- Camera --\" section if this is enabled.</c>",
+			"type": "bool",
+			"default": false
+		},
+		"customFooter": {
+			"name": "Custom Footer",
+			"description": "Add your own custom text to appear at the very end of the info label, stylized <cl>-- [like this] --</c>. Leave this setting at its default value (an empty string) to disable this setting.\n\n<cy>Only the first 20 characters of what you set here will be accepted.</c>",
+			"type": "string",
+			"default": "",
+			"filter": "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~• "
+		},
+		"logDebugText": {
+			"name": "Enable Logging",
+			"description": "Logs the info label into your Geode logs folder.\n\n<cr>By enabling this option, you agree to hold harmless the mod developer (RayDeeUx) or any lead developer of Geode and assume all responsibility for any resulting damages, including incredibly large log files.</c>",
+			"type": "bool",
+			"default": false
+		}
+	},
+	"resources": {
+		"files": [
+			"resources/*.png"
+		]
+	},
+	"issues": {
+		"url": "https://discord.com/channels/911701438269386882/1205523212444639292",
+		"info": "Ping me <cl>(@erymanthus)</c> in the Geode SDK Discord server's <cl>#help</c> channel if you need help. <cr>DMs are NOT accepted.</c>"
+	},
+	"links": {
+		"community": "https://discord.gg/WqZBYdBWZW",
+		"homepage": "https://discord.com/channels/822510988409831486/1206371881222144020"
+	}
+}

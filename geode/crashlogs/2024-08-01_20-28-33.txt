@@ -1,0 +1,278 @@
+2024-08-01T20:28:30-0400
+I bet Cvolton wouldn't have this problem.
+
+== Geode Information ==
+- Working Directory: Z:\home\slash\.local\share\Steam\steamapps\common\Geometry Dash
+- Wine detected
+- Loader Version: v3.4.0 (Geometry Dash v2.206)
+- Loader Commit: a533b5f
+- Bindings Commit: de6a02b
+- Installed Mods: 54 (Loaded: 54/54)
+- Problems: 0
+
+== Exception Information ==
+- Thread Information: "Main" (ID: 296)
+- Thread Start Address: GeometryDash.exe+0x4A41C8 (EntryPoint+0x0)
+- Exception Code: EXCEPTION_ACCESS_VIOLATION (0xC0000005)
+- Exception Address: ucrtbase.dll+0x6E7E0 (strlen+0x0)
+- Exception Flags: 0x0
+- Exception Parameters: 0x0, 0x0
+- Access Violation Type: Read
+- Access Violation Address: 0x00000000
+- Protect: PAGE_NOACCESS (0x1)
+- State: MEM_FREE (0x10000)
+- Type: Unknown (0x0)
+
+== Stack Trace ==
+- ucrtbase.dll+0x6E7E0 (strlen+0x0)
+- raydeeux.infolabeltweaks.dll+0x28395 (<0x27aa0>+0x8f5)
+- 0x02895472+0x0
+- hiimjustin000.integrated_demonlist.dll+0x1141F
+- 0x02895472+0x0
+- thesillydoggo.qolmod.dll+0xCD351
+- 0x02895472+0x0
+- 0x02895472+0x0
+- libcocos2d.dll+0x75EDD (<0x75cc0>+0x21d)
+- 0x029A5C84+0x0
+- 0x029A5C84+0x0
+- 0x029A5C84+0x0
+- alphalaneous.ezclipboard.dll+0x78F3 (<0x6f90>+0x963)
+- 0x029A5C84+0x0
+- libcocos2d.dll+0x7604E (<0x76020>+0x2e)
+- libcocos2d.dll+0xD6702 (<0xd5e90>+0x872)
+- user32.dll+0x55711 (<0x54aa2>+0xc6f)
+- user32.dll+0x5AC13
+- user32.dll+0x5AA0E
+- user32.dll+0x1B654 (<0x1b610>+0x44)
+- libcocos2d.dll+0xD4198 (<0xd4120>+0x78)
+- libcocos2d.dll+0x72CA6 (<0x72870>+0x436)
+- GeometryDash.exe+0x4A2D69 (<0x4a2ca6>+0xc3)
+- Geode.dll+0x2453DA (gdMainHook+0x22a)
+└ Z:\home\runner\work\geode\geode\loader\src\platform\windows\main.cpp:167
+- GeometryDash.exe+0x4A415A (<0x4a4054>+0x106)
+- kernel32.dll+0x1478D (<0x14478>+0x315)
+- ntdll.dll+0xF3FF (<0xf400>+0xffffffffffffffff)
+
+== Register States ==
+- RAX: 00000000 (0i | 0u)
+- RBX: 00000000 (0i | 0u)
+- RCX: 00000000 (0i | 0u)
+- RDX: FFFFFFF7 (4294967287i | 4294967287u)
+- RBP: 00000000 (0i | 0u)
+- RSP: 0011FFB0 (&"")
+- RDI: 00000000 (0i | 0u)
+- RSI: 00000000 (0i | 0u)
+- R8: 00000001 (1i | 1u)
+- R9: 00D072A0 (-> 0x3)
+- R10: 00000001 (1i | 1u)
+- R11: 00B01800 (&"RM")
+- R12: 00000000 (0i | 0u)
+- R13: 00000000 (0i | 0u)
+- R14: 00000000 (0i | 0u)
+- R15: 00000000 (0i | 0u)
+- RIP: 6FFFFFF4F3FF (ntdll.dll+0xF3FF (<0xf400>+0xffffffffffffffff))
+- XMM0: 6F712E6F67676F64 796C6C693F800000 (7.464202e+28 | 1.09292145e+24 | 7.6723805e+34 | 1)
+- XMM1: 0000000000000000 000000003F800000 (0 | 0 | 0 | 1)
+- XMM2: 0000000000000000 0000000041000000 (0 | 0 | 0 | 8)
+- XMM3: 6F712E6F67676F64 796C6C693E000000 (7.464202e+28 | 1.09292145e+24 | 7.6723805e+34 | 0.125)
+- XMM4: 0000000000000000 0000000000000000 (0 | 0 | 0 | 0)
+- XMM5: 0000000000000000 00000000000000C1 (0 | 0 | 0 | 2.7e-43)
+- XMM6: 0000000000000000 0000000000000000 (0 | 0 | 0 | 0)
+- XMM7: 0000000000000000 0000000000000000 (0 | 0 | 0 | 0)
+- AF: 0 | CF: 0 | DF: 0 
+- IF: 1 | OF: 0 | PF: 1 
+- SF: 0 | TF: 0 | ZF: 0 
+
+== Installed Mods ==
+x | [v1.1.6] adyagd.godlikefaces
+x | [v1.2.0] adyagd.ingamelistmod
+x | [v0.1.0-alpha.5] alphalaneous.asyncweb
+x | [v1.1.4] alphalaneous.ezclipboard
+x | [v1.3.21] alphalaneous.happy_textures
+x | [v1.1.10] alphalaneous.pages_api
+x | [v1.2.8] alphalaneous.projectedstars
+x | [v1.1.2] alphalaneous.transparent_lists
+x | [v1.1.10] b1rtek.gddlintegration
+x | [v1.0.0] bobby_shmurner.zoom
+x | [v1.2.1] capeling.icon_profile
+x | [v1.0.6] cdc.level_thumbnails
+x | [v1.0.3] cgytrus.level-shaders-fix
+x | [v4.2.5] cvolton.betterinfo
+x | [v1.0.0] cvolton.level-id-api
+x | [v1.2.0-beta.2] cvolton.misc_bugfixes
+x | [v1.3.3-alpha.2] elnexreal.copy_song_id
+x | [v2.1.0] elohmrow.death_tracker
+x | [v1.0.9] firee.goldenbest
+x | [v0.3.0] flafy.autonong
+x | [v2.11.0] fleym.nongd
+x | [v1.7.1] geode.custom-keybinds
+x | [v3.4.0] geode.loader
+x | [v1.13.1] geode.node-ids
+x | [v1.6.1] geode.texture-loader
+x | [v1.5.5] hiimjustin000.integrated_demonlist
+x | [v1.1.0] hjfod.backups
+x | [v6.7.0] hjfod.betteredit
+x | [v1.0.0] hjfod.bettersave_recovery
+x | [v1.3.0] hjfod.gdshare
+x | [v1.2.1] hjfod.gmd-api
+x | [v1.0.0] hjfod.trashcan
+x | [v1.2.1] itzkiba.better_progression
+x | [v1.2.0] itzkiba.grandpa_demon
+x | [v1.0.3] lilnibblit.chestalert
+x | [v1.0.0] m336.autoleaderboard
+x | [v1.0.4] mat.max-window
+x | [v1.2.1] mat.run-info
+x | [v1.1.0] mat.song-preview
+x | [v1.1.0] midair.fullscreen_keybind
+x | [v1.4.0-beta.2] oatmealine.ids_integration
+x | [v1.4.0-beta.3] oatmealine.nlw_integration
+x | [v1.6.0] prevter.bettercrash
+x | [v1.2.0] raydeeux.endscreentweaks
+x | [v1.0.0] raydeeux.infolabeltweaks
+x | [v1.3.2] raydeeux_thesillydoggo.evenmoreleveltags
+x | [v4.2.0-beta.1] spaghettdev.betterinputs
+x | [v1.1.20] syzzi.click_between_frames
+x | [v1.2.0] techstudent10.attempt_utils
+x | [v1.0.1] techstudent10.settings_plus
+x | [v2.3.1] thesillydoggo.gradientpages
+x | [v1.5.2] thesillydoggo.qolmod
+x | [v1.1.1] timestepyt.nostupidbuttons
+x | [v1.1.4] weebify.restartbtn
+
+== Stack Allocations ==
+- 0x11DDB0: 796C6C693F800000 (8749487375366750208i | 1065353216u)
+- 0x11DDB8: 6F712E6F67676F64 (8030250666589384548i | 1734831972u)
+- 0x11DDC0: 3F800000 (1065353216i | 1065353216u)
+- 0x11DDC8: 00000000 (0i | 0u)
+- 0x11DDD0: 41000000 (1090519040i | 1090519040u)
+- 0x11DDD8: 00000000 (0i | 0u)
+- 0x11DDE0: 796C6C693E000000 (8749487375341584384i | 1040187392u)
+- 0x11DDE8: 6F712E6F67676F64 (8030250666589384548i | 1734831972u)
+- 0x11DDF0: 00000000 (0i | 0u)
+- 0x11DDF8: 00000000 (0i | 0u)
+- 0x11DE00: 000000C1 (193i | 193u)
+- 0x11DE08: 00000000 (0i | 0u)
+- 0x11DE10: 00000000 (0i | 0u)
+- 0x11DE18: 00000000 (0i | 0u)
+- 0x11DE20: 00000000 (0i | 0u)
+- 0x11DE28: 00000000 (0i | 0u)
+- 0x11DE30: 00000000 (0i | 0u)
+- 0x11DE38: 00000000 (0i | 0u)
+- 0x11DE40: 00000000 (0i | 0u)
+- 0x11DE48: 00000000 (0i | 0u)
+- 0x11DE50: 00000000 (0i | 0u)
+- 0x11DE58: 00000000 (0i | 0u)
+- 0x11DE60: 00000000 (0i | 0u)
+- 0x11DE68: 00000000 (0i | 0u)
+- 0x11DE70: 00000000 (0i | 0u)
+- 0x11DE78: 00000000 (0i | 0u)
+- 0x11DE80: 00000000 (0i | 0u)
+- 0x11DE88: 00000000 (0i | 0u)
+- 0x11DE90: 00000000 (0i | 0u)
+- 0x11DE98: 00000000 (0i | 0u)
+- 0x11DEA0: 00000000 (0i | 0u)
+- 0x11DEA8: 00000000 (0i | 0u)
+- 0x11DEB0: 00000000 (0i | 0u)
+- 0x11DEB8: 00000000 (0i | 0u)
+- 0x11DEC0: 00000000 (0i | 0u)
+- 0x11DEC8: 00000000 (0i | 0u)
+- 0x11DED0: 00000000 (0i | 0u)
+- 0x11DED8: 00000000 (0i | 0u)
+- 0x11DEE0: 44446505853 (4691283957843i | 1179670611u)
+- 0x11DEE8: 0000001F (31i | 31u)
+- 0x11DEF0: 00000440 (1088i | 1088u)
+- 0x11DEF8: 00000000 (0i | 0u)
+- 0x11DF00: 00000000 (0i | 0u)
+- 0x11DF08: 00000000 (0i | 0u)
+- 0x11DF10: 00000000 (0i | 0u)
+- 0x11DF18: 00000000 (0i | 0u)
+- 0x11DF20: 00000000 (0i | 0u)
+- 0x11DF28: 00000000 (0i | 0u)
+- 0x11DF30: 00000000 (0i | 0u)
+- 0x11DF38: 00000000 (0i | 0u)
+- 0x11DF40: 00000000 (0i | 0u)
+- 0x11DF48: 00000000 (0i | 0u)
+- 0x11DF50: 00000000 (0i | 0u)
+- 0x11DF58: 00000000 (0i | 0u)
+- 0x11DF60: 00000000 (0i | 0u)
+- 0x11DF68: 00000000 (0i | 0u)
+- 0x11DF70: 00000000 (0i | 0u)
+- 0x11DF78: 00000000 (0i | 0u)
+- 0x11DF80: 782E3F878BE0 (132140029676512i | 1065847776u)
+- 0x11DF88: 00000000 (0i | 0u)
+- 0x11DF90: 00000000 (0i | 0u)
+- 0x11DF98: 7FFC3000 (-> 0x341)
+- 0x11DFA0: 00000003 (3i | 3u)
+- 0x11DFA8: 782E3F878BE0 (132140029676512i | 1065847776u)
+- 0x11DFB0: 782E3F868E68 (132140029611624i | 1065782888u)
+- 0x11DFB8: 555590E77AC0 (93825991670464i | 2431089344u)
+- 0x11DFC0: 7FFCF8A0 (-> 0x7FFCF990 -> 0xF)
+- 0x11DFC8: 782E3F7EEE7F (132140029111935i | 1065283199u)
+- 0x11DFD0: 00000000 (0i | 0u)
+- 0x11DFD8: 00000000 (0i | 0u)
+- 0x11DFE0: 00000000 (0i | 0u)
+- 0x11DFE8: 00000000 (0i | 0u)
+- 0x11DFF0: 00000000 (0i | 0u)
+- 0x11DFF8: 7FFCF9C0 (-> 0x7)
+- 0x11E000: 1000FFB80 (-> 0x9A)
+- 0x11E008: 782E3F85B088 (132140029554824i | 1065726088u)
+- 0x11E010: 7FFF4957A3C8 (140734423868360i | 1230480328u)
+- 0x11E018: 555590E77AC0 (93825991670464i | 2431089344u)
+- 0x11E020: 7FFCF990 (-> 0xF)
+- 0x11E028: 782E3F828125 (132140029346085i | 1065517349u)
+- 0x11E030: 00000000 (0i | 0u)
+- 0x11E038: 3000000020 (206158430240i | 32u)
+- 0x11E040: 7FFCF9A0 (-> 0x15E8568 -> &"Escape")
+- 0x11E048: 7FFCF8D0 (&"")
+- 0x11E050: 00000000 (0i | 0u)
+- 0x11E058: 00000000 (0i | 0u)
+- 0x11E060: 00000000 (0i | 0u)
+- 0x11E068: 00000000 (0i | 0u)
+- 0x11E070: 0000FFFF (65535i | 65535u)
+- 0x11E078: 600000000005 (105553116266501i | 5u)
+- 0x11E080: 00000000 (0i | 0u)
+- 0x11E088: 00000000 (0i | 0u)
+- 0x11E090: 00000000 (0i | 0u)
+- 0x11E098: 00000000 (0i | 0u)
+- 0x11E0A0: 00000000 (0i | 0u)
+- 0x11E0A8: 00000000 (0i | 0u)
+- 0x11E0B0: 00000000 (0i | 0u)
+- 0x11E0B8: 00000000 (0i | 0u)
+- 0x11E0C0: 00000000 (0i | 0u)
+- 0x11E0C8: 00000000 (0i | 0u)
+- 0x11E0D0: 00000000 (0i | 0u)
+- 0x11E0D8: 782E3F82C96D (132140029364589i | 1065535853u)
+- 0x11E0E0: 000001F4 (500i | 500u)
+- 0x11E0E8: C0000005 (3221225477i | 3221225477u)
+- 0x11E0F0: 0000000F (15i | 15u)
+- 0x11E0F8: 6FFFFFFAE2C0 (&"")
+- 0x11E100: 0011E6B0 (-> 0xC0000005)
+- 0x11E108: 0011E1C0 (-> 0x7FFCF9B0 -> 0x11EA90 -> 0x11EAE0 -> 0xFFFFFFFFFFFFFFFE)
+- 0x11E110: 6FFFFFFC1050 (&"dispatch_exception")
+- 0x11E118: 6FFFFFFBBB33 (&" info[%ld]=%016I64x
+")
+- 0x11E120: 0011E170 (&"g")
+- 0x11E128: 6FFFFFF84507 (ntdll.dll+0x44507)
+- 0x11E130: 6500740073005C (28429470871519324i | 7536732u)
+- 0x11E138: 700061006D0061 (31525614010564705i | 7143521u)
+- 0x11E140: 63005C00730070 (27866417838882928i | 7536752u)
+- 0x11E148: 6F006D006D006F (31244190573461615i | 7143535u)
+- 0x11E150: 650047005C006E (28429277596483694i | 6029422u)
+- 0x11E158: 740065006D006F (32651531097276527i | 7143535u)
+- 0x11E160: 44002000790072 (19140435863208050i | 7929970u)
+- 0x11E168: 5C006800730061 (25896144541515873i | 7536737u)
+- 0x11E170: 64006F00650067 (28147974419054695i | 6619239u)
+- 0x11E178: 00000001 (1i | 1u)
+- 0x11E180: 00000000 (0i | 0u)
+- 0x11E188: 015E8490 (&"")
+- 0x11E190: 0000000F (15i | 15u)
+- 0x11E198: 011C6CC0 (-> 0x2D00000009)
+- 0x11E1A0: 015E8568 (&"Escape")
+- 0x11E1A8: 00000000 (0i | 0u)
+
+== Hardware Information ==
+- CPU: Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz (6 cores, 6 threads)
+- GPU: Intel(R) UHD Graphics 630 (CFL GT2)
+- RAM: 7779 MB total, 4739 MB used, 3040 MB free
+- SWAP: 0 MB total, 0 MB used, 0 MB free
+- OS: Windows 10 amd64 (v.10.0.19043.1466)

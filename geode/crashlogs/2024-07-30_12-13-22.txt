@@ -1,0 +1,164 @@
+2024-07-30T12:13:21-0400
+I just don't know what went wrong :(
+
+== Geode Information ==
+- Working Directory: Z:\home\slash\.local\share\Steam\steamapps\common\Geometry Dash
+- Wine detected
+- Loader Version: v3.4.0 (Geometry Dash v2.206)
+- Loader Commit: a533b5f
+- Bindings Commit: de6a02b
+- Installed Mods: 46 (Loaded: 9/46)
+- Problems: 0
+
+== Exception Information ==
+- Thread Information: "Main" (ID: 296)
+- Thread Start Address: GeometryDash.exe+0x4A41C8 (EntryPoint+0x0)
+- Exception Code: EXCEPTION_ACCESS_VIOLATION (0xC0000005)
+- Exception Address: libcocos2d.dll+0x2AC3 (<0x2ac0>+0x3)
+- Exception Flags: 0x0
+- Exception Parameters: 0x0, 0x10
+- Access Violation Type: Read
+- Access Violation Address: 0x00000010
+- Protect: PAGE_NOACCESS (0x1)
+- State: MEM_FREE (0x10000)
+- Type: Unknown (0x0)
+
+== Stack Trace ==
+- libcocos2d.dll+0x2AC3 (<0x2ac0>+0x3)
+- GeometryDash.exe+0x30DD59 (LoadingLayer::scene+0x309)
+- 0x01012472
+- Geode.dll+0x33968E (LoadingLayer::init+0x3e)
+└ Z:\home\runner\work\geode\geode\build\bindings\bindings\Geode\GeneratedSource.cpp:22518
+- Geode.dll+0x4B455 (CustomLoadingLayer::init+0x35)
+└ Z:\home\runner\work\geode\geode\loader\src\hooks\LoadingLayer.cpp:57
+- 0x01012472
+- alphalaneous.happy_textures.dll+0x76C86
+- 0x01012472
+- GeometryDash.exe+0x30DB1A (LoadingLayer::scene+0xca)
+- GeometryDash.exe+0x8169A (AppDelegate::applicationDidFinishLaunching+0x32a)
+- libcocos2d.dll+0x729D6 (<0x72870>+0x166)
+- GeometryDash.exe+0x4A2D69 (<0x4a2ca6>+0xc3)
+- Geode.dll+0x2453DA (gdMainHook+0x22a)
+└ Z:\home\runner\work\geode\geode\loader\src\platform\windows\main.cpp:167
+- GeometryDash.exe+0x4A415A (<0x4a4054>+0x106)
+- kernel32.dll+0x1473D (<0x14428>+0x315)
+- ntdll.dll+0xF3FF (<0xf400>+0xffffffffffffffff)
+
+== Register States ==
+- RAX: 140574C20 (-> 0x1404A2DBA -> GeometryDash.exe+0x4A2DBA (<0x4a2ca6>+0x114))
+- RBX: 00000000 (0i | 0u)
+- RCX: 00D0BDF0 (LoadingLayer*)
+- RDX: 00000000 (0i | 0u)
+- RBP: 00000000 (0i | 0u)
+- RSP: 0011FFB0 (&"")
+- RDI: 00000000 (0i | 0u)
+- RSI: 00000000 (0i | 0u)
+- R8: 140574C20 (-> 0x1404A2DBA -> GeometryDash.exe+0x4A2DBA (<0x4a2ca6>+0x114))
+- R9: 00D08C20 (-> 0x2)
+- R10: 00000001 (1i | 1u)
+- R11: 00B01800 (-> 0x1E4100001E54)
+- R12: 00000000 (0i | 0u)
+- R13: 00000000 (0i | 0u)
+- R14: 00000000 (0i | 0u)
+- R15: 00000000 (0i | 0u)
+- RIP: 6FFFFFF4F3FF (ntdll.dll+0xF3FF (<0xf400>+0xffffffffffffffff))
+- XMM0: 6966206D6F726620 6174616420746547 (1.7387879e+25 | 7.5018834e+28 | 2.8175146e+20 | 2.0701114e-19)
+- XMM1: 00000000FF000000 0000000000000000 (0 | -1.7014118e+38 | 0 | 0)
+- XMM2: 00007866702F3037 313232332F617461 (4.3191e-41 | 2.1687266e+29 | 2.5930944e-09 | 2.0504977e-10)
+- XMM3: 5C68736144207972 74656D6F65475C6E (2.6171622e+17 | 641.8976 | 7.270847e+31 | 5.8840997e+22)
+- XMM4: 0000000000000000 000076481F9AEB20 (0 | 0 | 4.2431e-41 | 6.561052e-20)
+- XMM5: 007000780045005C 006E006F00690073 (1.0285744e-38 | 6.336778e-39 | 1.010206e-38 | 9.642888e-39)
+- XMM6: 0000000000000000 0000000000000000 (0 | 0 | 0 | 0)
+- XMM7: 0000000000000000 0000000000000000 (0 | 0 | 0 | 0)
+- AF: 0 | CF: 0 | DF: 0 
+- IF: 1 | OF: 0 | PF: 0 
+- SF: 0 | TF: 0 | ZF: 0 
+
+== Installed Mods ==
+~ | [v1.1.6] adyagd.godlikefaces
+~ | [v1.2.0] adyagd.ingamelistmod
+~ | [v0.1.0-alpha.5] alphalaneous.asyncweb
+x | [v1.3.20] alphalaneous.happy_textures
+~ | [v1.1.10] alphalaneous.pages_api
+~ | [v1.2.8] alphalaneous.projectedstars
+~ | [v1.1.2] alphalaneous.transparent_lists
+~ | [v1.1.10] b1rtek.gddlintegration
+~ | [v1.0.0] bobby_shmurner.zoom
+~ | [v1.2.1] capeling.icon_profile
+~ | [v1.0.6] cdc.level_thumbnails
+~ | [v1.0.3] cgytrus.level-shaders-fix
+x | [v4.2.5] cvolton.betterinfo
+x | [v1.0.0] cvolton.level-id-api
+x | [v1.2.0-beta.2] cvolton.misc_bugfixes
+~ | [v1.3.3-alpha.2] elnexreal.copy_song_id
+~ | [v2.1.0] elohmrow.death_tracker
+~ | [v1.0.8] firee.goldenbest
+~ | [v0.3.0] flafy.autonong
+~ | [v2.11.0] fleym.nongd
+~ | [v1.7.1] geode.custom-keybinds
+x | [v3.4.0] geode.loader
+x | [v1.13.1] geode.node-ids
+x | [v1.6.1] geode.texture-loader
+~ | [v1.5.5] hiimjustin000.integrated_demonlist
+~ | [v1.1.0] hjfod.backups
+~ | [v1.0.0] hjfod.bettersave_recovery
+~ | [v1.3.0] hjfod.gdshare
+~ | [v1.2.1] hjfod.gmd-api
+~ | [v1.0.0] hjfod.trashcan
+~ | [v1.2.1] itzkiba.better_progression
+~ | [v1.2.0] itzkiba.grandpa_demon
+~ | [v1.0.3] lilnibblit.chestalert
+~ | [v1.0.4] mat.max-window
+~ | [v1.2.1] mat.run-info
+~ | [v1.1.0] mat.song-preview
+~ | [v1.4.0-beta.2] oatmealine.ids_integration
+~ | [v1.4.0-beta.3] oatmealine.nlw_integration
+x | [v1.5.0] prevter.bettercrash
+~ | [v4.2.0-beta.1] spaghettdev.betterinputs
+~ | [v1.1.20] syzzi.click_between_frames
+~ | [v1.2.0] techstudent10.attempt_utils
+~ | [v2.3.1] thesillydoggo.gradientpages
+x | [v1.5.2] thesillydoggo.qolmod
+~ | [v1.1.1] timestepyt.nostupidbuttons
+~ | [v1.1.4] weebify.restartbtn
+
+== Stack Allocations ==
+- 0x11FFB0: 00000000 (0i | 0u)
+- 0x11FFB8: 00000000 (0i | 0u)
+- 0x11FFC0: 00000000 (0i | 0u)
+- 0x11FFC8: 00000000 (0i | 0u)
+- 0x11FFD0: 00000000 (0i | 0u)
+- 0x11FFD8: 00000000 (0i | 0u)
+- 0x11FFE0: 00000000 (0i | 0u)
+- 0x11FFE8: 00000000 (0i | 0u)
+- 0x11FFF0: 00000000 (0i | 0u)
+- 0x11FFF8: 00000000 (0i | 0u)
+- 0x120000: 300905A4D (12894362189i | 9460301u)
+- 0x120008: FFFF00000004 (281470681743364i | 4u)
+- 0x120010: 000000B8 (184i | 184u)
+- 0x120018: 00000040 (64i | 64u)
+- 0x120020: 00000000 (0i | 0u)
+- 0x120028: 00000000 (0i | 0u)
+- 0x120030: 00000000 (0i | 0u)
+- 0x120038: 8000000000 (549755813888i | 0u)
+- 0x120040: 69756220656E6957 (7599087837537790295i | 1701734743u)
+- 0x120048: 4C4C44206E69746C (5497844151194580076i | 1852404844u)
+- 0x120050: 00000000 (0i | 0u)
+- 0x120058: 00000000 (0i | 0u)
+- 0x120060: 1866400004550 (429239031579984i | 17744u)
+- 0x120068: BDD7936B (3185021803i | 3185021803u)
+- 0x120070: 202200F000000000 (2315414189214007296i | 0u)
+- 0x120078: 0A07020B (-> 0x57400000009C4BE)
+- 0x120080: 1866400004550 (429239031579984i | 17744u)
+- 0x120088: BDD7936B (3185021803i | 3185021803u)
+- 0x120090: 222E00F000000000 (2462907077010391040i | 0u)
+- 0x120098: 0A07020B (-> 0x57400000009C4BE)
+- 0x1200A0: 00010000 (-> 0x110010005950001)
+- 0x1200A8: 00000000 (0i | 0u)
+
+== Hardware Information ==
+- CPU: Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz (6 cores, 6 threads)
+- GPU: Intel(R) UHD Graphics 630 (CFL GT2)
+- RAM: 7779 MB total, 5787 MB used, 1992 MB free
+- SWAP: 0 MB total, 0 MB used, 0 MB free
+- OS: Windows 10 amd64 (v.10.0.19043.1466)

@@ -1,0 +1,32 @@
+{
+	"geode": "3.4.0",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206"
+	},
+	"version": "v1.2.9",
+	"id": "alphalaneous.projectedstars",
+	"name": "Astral Projection",
+	"developer": "Alphalaneous",
+	"description": "Shows how many stars you will get if you beat a level with some extra flair!",
+	"repository": "https://github.com/Alphalaneous/Projected-Stars",
+	"resources": {
+        "sprites": [
+            "resources/starOutline.png",
+			"resources/moonOutline.png"
+        ]
+    },
+	"links": {
+        "homepage": "https://twitter.com/alphalaneous",
+        "source": "https://github.com/Alphalaneous/Projected-Stars",
+        "community": "https://discord.gg/Txn2CA5dHF"
+    },
+	"dependencies": [
+        {
+            "id": "geode.node-ids",
+            "version": ">=v1.12.0-beta.2",
+            "importance": "required"
+        }
+    ]
+}

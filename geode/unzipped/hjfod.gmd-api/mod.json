@@ -1,0 +1,21 @@
+{
+	"geode": "3.1.1",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206"
+	},
+	"version": "1.2.1",
+	"id": "hjfod.gmd-api",
+	"name": "GMD API",
+	"developer": "HJfod",
+	"description": "API for working with level files (.gmd)",
+	"links": {
+		"source": "https://github.com/HJfod/GMD-API"
+	},
+	"api": {
+		"include": [
+			"include/*.hpp"
+		]
+	}
+}
